@@ -1,0 +1,22 @@
+{
+  "name": "musicode",
+  "version": "0.0.1",
+  "description": "Coding music",
+  "main": "app.coffee",
+  "dependencies": {
+    "express": "^4.13.2",
+    "midi": "^0.9.3",
+    "socket.io": "^1.3.6",
+    "teoria": "^1.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "muisc",
+    "code"
+  ],
+  "author": "luis alanis",
+  "license": "ISC"
+}
