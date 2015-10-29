@@ -72,7 +72,38 @@ class Player
   pause: ->
     clearInterval(@lp)
     @playing = false
-  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   getNote: ->
     # n = t.note(@chords[@currBar].note).scale('majorpentatonic').notes()[(@tmp % 5)];
     # return n
@@ -88,6 +119,17 @@ class Player
     @io.emit('note', n.name() + '/' + (n.octave()+ 1)  )
     
     return n
+
+
+
+
+
+
+
+
+
+
+
 
   stop: ->
     @pause()

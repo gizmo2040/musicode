@@ -308,14 +308,14 @@
     border:1px solid black;
   }
   </style>
-	<script src="http://192.168.1.147/music/vexflow-min.js"></script>
-	<script src="http://192.168.1.147/music/jquery.js" ></script>
+	<script src="http://localhost/music/vexflow-min.js"></script>
+	<script src="http://localhost/music/jquery.js" ></script>
 
 
 
 
   <script src="/socket.io/socket.io.js"></script>
-  
+
   <script>
     //css piano -> http://cssdeck.com/labs/pure-css3-piano
     //$('li').index($(a.currentTarget.parentElement))
@@ -328,7 +328,7 @@
 
 
   </script>
- <link rel="stylesheet" href="http://192.168.1.147/music/bootstrap.min.css">
+ <link rel="stylesheet" href="http://localhost/music/bootstrap.min.css">
 </head>
 
 <body style="text-align:center;">
@@ -401,6 +401,7 @@ $(document).ready(function(){
     var cmd = $(e.currentTarget).attr('action');
     socket.emit('cmd',cmd)
   });
+  
   $('.x8-note').click(function(evt){
     var num = $('.x8-note').index(evt.currentTarget);
     socket.emit('note',(num + 48));
